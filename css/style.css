@@ -222,6 +222,8 @@ body{
 	height: 220px;
 	background-color: #F2F2F2;
 	border: 1px;
+	position: relative;
+	transition: border .3s linear;
 }
 .feature-element.right{
 	margin-left: 26px;
@@ -234,6 +236,7 @@ body{
 	font-size: 22px;
 	padding-top: 15px;
 	padding-left: 15px;
+	transition: color .3s linear;
 }
 .content-block {
 	padding-top:15px;
@@ -255,8 +258,10 @@ body{
 }
 .content-block a{
 	text-transform: lowercase;
-	padding-right: 15px;
-	padding-bottom: 20px;
+	position: absolute;
+	right: 15px;
+	bottom: 20px;
+	transition:right .3s linear, color .3s linear;
 }
 .feature-element:hover{
 	border: 1px solid red;
@@ -266,6 +271,7 @@ body{
 }
 .feature-element:hover .content-block a{
 	color:red;
+	right:35px;
 }
 /*feature
 
